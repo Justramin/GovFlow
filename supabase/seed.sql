@@ -26,6 +26,7 @@ ON CONFLICT (division_id, name) DO NOTHING;
 
 -- Seed Roles
 INSERT INTO roles (name, description) VALUES
+('SUPER_ADMIN', 'Highest system administrator with overall access to all modules'),
 ('STATE_ADMIN', 'Global governance control across all districts and divisions'),
 ('DISTRICT_ADMIN', 'Administrative control bounded to a single target district'),
 ('DIVISION_ADMIN', 'Operational control bounded to a single division'),
